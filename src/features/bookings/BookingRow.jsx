@@ -14,7 +14,7 @@ import {
 } from "react-icons/hi2";
 import Menus from "../../ui/Menus";
 import { useNavigate } from "react-router-dom";
-import { useCheckout } from "../check-in-out/useCheckOut";
+import { useCheckout } from "../check-in-out/useCheckout";
 import { useDeleteBooking } from "./useDeleteBooking";
 import ConfirmDelete from "../../ui/ConfirmDelete";
 
@@ -48,11 +48,11 @@ const Amount = styled.div`
 function BookingRow({
   booking: {
     id: bookingId,
-    created_at,
+
     startDate,
     endDate,
     numNights,
-    numGuests,
+
     totalPrice,
     status,
     guests: { fullName: guestName, email },
