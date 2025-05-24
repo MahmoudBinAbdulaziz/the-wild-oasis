@@ -24,7 +24,7 @@ const Avatar = styled.img`
 
 function UserAvatar() {
   const { user, isLoading } = useUser();
-  if (isLoading) return <Spinner />;
+  if (isLoading || !user) return <Spinner />;
   const { fullName, avatar } = user.user_metadata;
 
   return (
